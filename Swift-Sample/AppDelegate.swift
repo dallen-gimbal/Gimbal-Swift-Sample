@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Gimbal
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Set API Key for Initialization of SDK
+        Gimbal.setAPIKey("ENTER_API_KEY", options: [:])
+        
+        // Start monitoring for SDK Services
+        Gimbal.start()
+        
         return true
     }
 
