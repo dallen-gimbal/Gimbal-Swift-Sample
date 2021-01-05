@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		F0A25D0E25910E67009E0DC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A25D0C25910E67009E0DC8 /* LaunchScreen.storyboard */; };
 		F0A25D1925910E67009E0DC8 /* Swift_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A25D1825910E67009E0DC8 /* Swift_SampleTests.swift */; };
 		F0A25D2425910E67009E0DC8 /* Swift_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A25D2325910E67009E0DC8 /* Swift_SampleUITests.swift */; };
+		F0A25D4A25A38FB2009E0DC8 /* OTWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A25D4925A38FB2009E0DC8 /* OTWViewController.swift */; };
 		F28154B5FCCF8FBEBFCE7149 /* Pods_Swift_Sample_Swift_SampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC8ECB76CF1A6949120B90C /* Pods_Swift_Sample_Swift_SampleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		F0A25D1F25910E67009E0DC8 /* Swift-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A25D2325910E67009E0DC8 /* Swift_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_SampleUITests.swift; sourceTree = "<group>"; };
 		F0A25D2525910E67009E0DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A25D4925A38FB2009E0DC8 /* OTWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTWViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				5A4D2F98B32FD26D059E8D5A /* Pods-Swift-SampleTests.debug.xcconfig */,
 				53BAD4497EBB1CEFAA54F1D1 /* Pods-Swift-SampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +144,7 @@
 				F0A25D0125910E66009E0DC8 /* AppDelegate.swift */,
 				F0A25D0325910E66009E0DC8 /* SceneDelegate.swift */,
 				F0A25D0525910E66009E0DC8 /* ViewController.swift */,
+				F0A25D4925A38FB2009E0DC8 /* OTWViewController.swift */,
 				F0A25D0725910E66009E0DC8 /* Main.storyboard */,
 				F0A25D0A25910E67009E0DC8 /* Assets.xcassets */,
 				F0A25D0C25910E67009E0DC8 /* LaunchScreen.storyboard */,
@@ -410,6 +412,7 @@
 				F0A25D0625910E66009E0DC8 /* ViewController.swift in Sources */,
 				F0A25D0225910E66009E0DC8 /* AppDelegate.swift in Sources */,
 				F0A25D0425910E66009E0DC8 /* SceneDelegate.swift in Sources */,
+				F0A25D4A25A38FB2009E0DC8 /* OTWViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

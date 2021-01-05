@@ -17,49 +17,31 @@ class ViewController: UIViewController, PlaceManagerDelegate, BeaconManagerDeleg
     
     // Entry for Place Callback
     func placeManager(_ manager: PlaceManager, didBegin visit: Visit) {
-        print(visit.place.identifier as String)
+        print("Visit began: \(visit.place.identifier as String)")
     }
     
     // Exit for Place Callback
     func placeManager(_ manager: PlaceManager, didEnd visit: Visit) {
-        print(visit.place.identifier as String)
+        print("Visit ended: \(visit.place.identifier as String)")
     }
     
     // Callback When Significant Location Change Occurs
     func placeManager(_ manager: PlaceManager, didDetect location: CLLocation) {
-        print(location.coordinate.latitude as Double)
+        print("Updated latitude: \(location.coordinate.latitude as Double)")
     }
     
     // Entry for Place Callback With Delay
     func placeManager(_ manager: PlaceManager, didBegin visit: Visit, withDelay delayTime: TimeInterval) {
-        print(visit.place.identifier as String)
+        print("Delayed visit began: \(visit.place.identifier as String)")
     }
     
     // Callback For Beacon Sighting
     func placeManager(_ manager: PlaceManager, didReceive sighting: BeaconSighting, forVisits visits: [Any]) {
-        print(sighting.beacon.identifier as String)
+        print("Sighted beacon: \(sighting.beacon.identifier as String)")
     }
     
     // Callback For Beacon Sighting (not needed if placeManager callback is already included)
     func beaconManager(_ manager: BeaconManager, didReceive sighting: BeaconSighting) {
-        print(sighting.beacon.identifier as String)
-    }
-}
-
-// Callbacks For Pickup (On-The-Way SDK)
-extension ViewController {
-    // Callback For Arrival At Pickup Location
-    func pickupManager(_ pickupManager: PickupManager, didArriveAt pickup: Pickup) {
-        print(pickup.identifier as String)
-    }
-    
-    // Callback When Monitoring Starts
-    func pickupManager(_ pickupManager: PickupManager, didStartMonitoringPickup pickup: Pickup) {
-        print(pickup.identifier as String)
-    }
-    
-    // Callback When Monitoring Stops
-    func pickupManager(_ pickupManager: PickupManager, didStopMonitoringPickup pickup: Pickup, reason completionReason: PickupCompletionReason) {
-        print(pickup.identifier as String)
+        print("Sighted beacon: \(sighting.beacon.identifier as String)")
     }
 }
